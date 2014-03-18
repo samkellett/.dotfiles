@@ -10,7 +10,7 @@ fi
 
 # User specific aliases and functions
 export TERM=rxvt-unicode-256color
-eval $(dircolors $HOME/.dotfiles/modules/dircolors-solarized/dircolors.256dark)
+eval $(dircolors $HOME/.dotfiles/modules/dircolors-solarized/dircolors.ansi-dark)
 
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
@@ -21,6 +21,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
+alias vivim='vi ~/.vimrc'
 alias vibash='vi ~/.bashrc && source ~/.bashrc'
 alias sauce='source ~/.bashrc'
 
