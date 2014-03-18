@@ -7,3 +7,6 @@
 [submodule "modules/solarized-xresources"]
 	path = modules/solarized-xresources
 	url = git@github.com:solarized/xresources.git
+[submodule "modules/nerdtree"]
+	path = modules/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
