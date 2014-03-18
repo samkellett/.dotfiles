@@ -1,10 +1,11 @@
 #!/usr/bin/bash 
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 force=$([[ "$1" == "-y" ]] && echo "y" || echo "n")
 
 
 function lnk
 {
-  local target="$1"
+  local target="$dir/$1"
   local link="$2"
   shift
   shift
