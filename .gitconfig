@@ -1,0 +1,11 @@
+[user]
+	email = sam@wavestore.com
+	name = Sam Kellett
+[push]
+	default = simple
+[branch "master"]
+	rebase = true
+[branch]
+	autosetuprebase = always
+[help]
+	autocorrect = 1

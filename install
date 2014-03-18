@@ -2,12 +2,10 @@
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 force=$([[ "$1" == "-y" ]] && echo "y" || echo "n")
 
-
 function lnk
 {
   local target="$dir/$1"
-  local link="$2"
-  shift
+  local link="$HOME/$1"
   shift
 
   local confirm="y"
@@ -30,4 +28,7 @@ function lnk
   fi
 }
 
-lnk .vimrc ~/.vimrc
+lnk .bashrc
+lnk .gitconfig
+lnk .vimrc
+
