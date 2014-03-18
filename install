@@ -30,5 +30,6 @@ function lnk
 
 lnk .bashrc
 lnk .gitconfig
+lnk .vim
 lnk .vimrc
 
