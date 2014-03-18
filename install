@@ -30,6 +30,7 @@ function lnk
 
 lnk .bashrc
 lnk .gitconfig
+lnk .remmina
 lnk .vim
 lnk .vimrc
 
