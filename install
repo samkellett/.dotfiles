@@ -1,0 +1,32 @@
+#!/usr/bin/bash 
+force=$([[ "$1" == "-y" ]] && echo "y" || echo "n")
+
+
+function lnk
+{
+  local target="$1"
+  local link="$2"
+  shift
+  shift
+
+  local confirm="y"
+  if [[ -L "$link" || -f "$link" ]] && [[ "$force" == "n" ]]; then
+    while :; do
+      echo -n "$link already exists, overwrite [Y/n]? "
+      read confirm
+
+      if [[ -z "$confirm" ]]; then
+        confirm="y"
+      fi
+      confirm=$(echo "$confirm" | awk '{ print tolower($0) }')
+      [[ "$confirm" != "y" && "$confirm" != "n" ]] || break
+    done
+  fi
+  
+  if [[ "$confirm" == "y" || "$force" == "y" ]]; then
+    rm "$link" 2> /dev/null
+    ln -s "$target" "$link"
+  fi
+}
+
+lnk .vimrc ~/.vimrc
