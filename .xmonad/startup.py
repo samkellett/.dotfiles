@@ -10,10 +10,9 @@ HOME = os.environ['HOME']
 
 # (command, backgroud)
 CMDS = [
-  ("xloadimage -onroot \
-                -fullscreen \
-                %s/Dropbox/Screenshots/dudex2.jpg" % HOME, False),
-  ("xrdb -merge %s/.Xresources" % HOME, False),
+  ("xloadimage -onroot -fullscreen %s/Dropbox/Screenshots/dudex2.jpg" % HOME, False),
+  ("xrdb %s/.Xresources" % HOME, False),
+  ("xrdb -merge %s/.dotfiles/modules/solarized-xresources/solarized" % HOME, False),
 #  ("nm-applet --sm-disable", True),
 #  ("trayer --edge top \
 #           --align right \
@@ -26,7 +25,7 @@ CMDS = [
 #           --height 16", True),
 #  ("xscreensaver -no-splash", True),
 #  ("xfce4-power-manager", False),
-   ("dropbox start", False),
+  ("dropbox start", False),
 #  ("gnome-keyring-daemon --start --components=pkcs11", False),
 ]
 

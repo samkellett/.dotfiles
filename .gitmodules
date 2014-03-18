@@ -10,3 +10,6 @@
 [submodule "modules/nerdtree"]
 	path = modules/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "modules/dircolors-solarized"]
+	path = modules/dircolors-solarized
+	url = git@github.com:seebi/dircolors-solarized.git

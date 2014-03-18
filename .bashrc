@@ -9,6 +9,8 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+export TERM=rxvt-unicode-256color
+eval $(dircolors $HOME/.dotfiles/modules/dircolors-solarized/dircolors.256dark)
 
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
