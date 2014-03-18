@@ -7,6 +7,9 @@ fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
 
@@ -17,4 +20,3 @@ function wpuid
   echo "id`uuidgen | awk '{ print toupper($0) }' | tr -d '-'`_H"
 }
 
-# User specific aliases and functions

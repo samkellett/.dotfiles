@@ -1,7 +1,10 @@
+execute pathogen#infect()
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
-color codeschool
-set guifont=Monaco:h12
+syntax enable
+set background=dark
+colorscheme solarized
 

@@ -10,23 +10,24 @@ HOME = os.environ['HOME']
 
 # (command, backgroud)
 CMDS = [
-    ("xloadimage -onroot \
+  ("xloadimage -onroot \
                 -fullscreen \
                 %s/Dropbox/Screenshots/dudex2.jpg" % HOME, False),
-#    ("nm-applet --sm-disable", True),
-#    ("trayer --edge top \
-#            --align right \
-#            --SetDockType true \
-#            --SetPartialStrut true \
-#            --expand true \
-#            --width 5 \
-#            --transparent true \
-#            --tint 0x000000 \
-#            --height 16", True),
-#    ("xscreensaver -no-splash", True),
-#    ("xfce4-power-manager", False),
-    ("dropbox start", False),
-#    ("gnome-keyring-daemon --start --components=pkcs11", False),
+  ("xrdb -merge %s/.Xresources" % HOME, False),
+#  ("nm-applet --sm-disable", True),
+#  ("trayer --edge top \
+#           --align right \
+#           --SetDockType true \
+#           --SetPartialStrut true \
+#           --expand true \
+#           --width 5 \
+#           --transparent true \
+#           --tint 0x000000 \
+#           --height 16", True),
+#  ("xscreensaver -no-splash", True),
+#  ("xfce4-power-manager", False),
+   ("dropbox start", False),
+#  ("gnome-keyring-daemon --start --components=pkcs11", False),
 ]
 
 def spawn_process(cmd, bg):

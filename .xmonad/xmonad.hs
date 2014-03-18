@@ -6,7 +6,7 @@ import qualified XMonad.StackSet as W
 import XMonad.Util.Run(spawnPipe)
 
 -- definitions
-myTerminal = "xfce4-terminal"
+myTerminal = "urxvt"
 
 myStartupHook = do
   spawn "~/.xmonad/startup.py"
@@ -18,5 +18,5 @@ main = do
     borderWidth = 2,
     terminal = myTerminal,
     startupHook = myStartupHook
-  } 
+  }
 
