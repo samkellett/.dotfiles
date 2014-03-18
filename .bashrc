@@ -17,7 +17,14 @@ export CXX=/usr/bin/g++
 
 alias c++11='$CXX -std=c++11'
 
-function wpuid
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -la'
+
+alias vibash='vi ~/.bashrc && source ~/.bashrc'
+alias sauce='source ~/.bashrc'
+
+function uid
 {
   echo "id`uuidgen | awk '{ print toupper($0) }' | tr -d '-'`_H"
 }
