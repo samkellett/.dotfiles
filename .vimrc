@@ -21,3 +21,6 @@ noremap  <Up>    <NOP>
 noremap  <Down>  <NOP>
 noremap  <Left>  <NOP>
 noremap  <Right> <NOP>
+
+" NERDTree
+map <silent> <C-n> :NERDTreeFocus<CR>
