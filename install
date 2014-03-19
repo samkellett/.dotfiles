@@ -1,4 +1,4 @@
-#!/usr/bin/bash 
+#!/usr/bin/bash
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 force=$([[ "$1" == "-y" ]] && echo "y" || echo "n")
 
@@ -21,7 +21,7 @@ function lnk
       [[ "$confirm" != "y" && "$confirm" != "n" ]] || break
     done
   fi
-  
+
   if [[ "$confirm" == "y" || "$force" == "y" ]]; then
     rm "$link" 2> /dev/null
     ln -s "$target" "$link"
@@ -31,6 +31,7 @@ function lnk
 lnk .bashrc
 lnk .gitconfig
 lnk .remmina
+lnk .ssh
 lnk .vim
 lnk .vimrc
 lnk .xmonad

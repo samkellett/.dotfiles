@@ -20,6 +20,7 @@ alias c++11='$CXX -std=c++11'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
+alias lh='ls -lh'
 
 alias vivim='vi ~/.vimrc'
 alias vibash='vi ~/.bashrc && source ~/.bashrc'
