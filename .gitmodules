@@ -4,12 +4,12 @@
 [submodule "modules/vim-colors-solarized"]
 	path = modules/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "modules/solarized-xresources"]
-	path = modules/solarized-xresources
-	url = git@github.com:solarized/xresources.git
 [submodule "modules/nerdtree"]
 	path = modules/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "modules/dircolors-solarized"]
 	path = modules/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized.git
+[submodule "modules/urxvt-solarized-xresources"]
+	path = modules/urxvt-solarized-xresources
+	url = https://github.com/samkellett/urxvt-solarized-xresources.git

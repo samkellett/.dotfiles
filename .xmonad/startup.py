@@ -12,7 +12,7 @@ HOME = os.environ['HOME']
 CMDS = [
   ("xloadimage -onroot -fullscreen %s/Dropbox/Screenshots/dudex2.jpg" % HOME, False),
   ("xrdb %s/.Xresources" % HOME, False),
-  ("xrdb -merge %s/.dotfiles/modules/solarized-xresources/solarized" % HOME, False),
+  ("xrdb -merge %s/.dotfiles/modules/urxvt-solarized-xresources/solarized" % HOME, False),
 #  ("nm-applet --sm-disable", True),
 #  ("trayer --edge top \
 #           --align right \
