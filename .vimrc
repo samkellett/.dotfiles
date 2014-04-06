@@ -9,8 +9,8 @@ set expandtab
 
 " Solarized
 syntax enable
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " Disable arrow keys
 noremap  <Up>  <NOP>
