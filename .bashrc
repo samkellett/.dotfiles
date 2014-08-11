@@ -1,33 +1,40 @@
-# .bashrc
+export EDITOR=vim
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
+
+# Homebrew gets priority:
+export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:/usr/local/sbin"
+
+export PATH="$PATH:$HOME/.cabal/bin:$PATH"
+
+# pwd gets last chance:
+export PATH="$PATH:."
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+export GREP_OPTIONS='--color=auto'
+
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  . /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-export TERM=rxvt-unicode-256color
-eval $(dircolors $HOME/.dotfiles/modules/dircolors-solarized/dircolors.ansi-dark)
-
-export CC=/usr/bin/gcc
-export CXX=/usr/bin/g++
-
-alias c++11='$CXX -std=c++11'
-
-alias la='ls -a'
 alias ll='ls -l'
-alias lla='ls -la'
+alias la='ls -a'
 alias lh='ls -lh'
+alias lla='ls -la'
+
+alias clr='for i in {1..50}; do echo; done'
 
 alias vivim='vi ~/.vimrc'
-alias vibash='vi ~/.bashrc && source ~/.bashrc'
-alias sauce='source ~/.bashrc'
+alias vibash='vi ~/.bash_profile && sauce && echo source ~/.bash_profile'
+alias sauce='source ~/.bash_profile'
 
-function uid
-{
-  echo "id`uuidgen | awk '{ print toupper($0) }' | tr -d '-'`_H"
-}
+alias qtcreator='open -a "Qt Creator"'
+alias sublime='open -a "Sublime Text 2"'
+alias google-chrome='open -a "Google Chrome"'
+alias gitx='open -a "GitX"'
+
+alias c++11='g++ -std=c++11 -stdlib=libc++'
 

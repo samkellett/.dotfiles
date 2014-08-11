@@ -1,1 +1,4 @@
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+# .bashrc
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi

@@ -28,8 +28,10 @@ function lnk
   fi
 }
 
+lnk .bash_profile
 lnk .bashrc
 lnk .gitconfig
 lnk .ssh
 lnk .vim
 lnk .vimrc
+
