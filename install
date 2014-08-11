@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 force=$([[ "$1" == "-y" ]] && echo "y" || echo "n")
 
@@ -30,9 +30,6 @@ function lnk
 
 lnk .bashrc
 lnk .gitconfig
-lnk .remmina
 lnk .ssh
 lnk .vim
 lnk .vimrc
-lnk .xmonad
-lnk .Xresources
