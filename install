@@ -23,7 +23,7 @@ function lnk
   fi
 
   if [[ "$confirm" == "y" || "$force" == "y" ]]; then
-    rm "$link" 2> /dev/null
+    rm -r "$link" 2> /dev/null
     ln -s "$target" "$link"
   fi
 }
