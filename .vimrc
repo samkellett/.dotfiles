@@ -6,6 +6,10 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set autoindent
+
+" Autosave on focus lost
+au FocusLost * silent! wa
 
 " Colour scheme
 syntax enable
@@ -33,4 +37,10 @@ function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
 autocmd BufWritePre * :call TrimWhiteSpace()
+
+" clang_complete
+let s:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib'
+if isdirectory(s:clang_library_path)
+  let g:clang_library_path = s:clang_library_path
+endif
 
