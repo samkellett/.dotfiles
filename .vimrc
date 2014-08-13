@@ -44,3 +44,11 @@ if isdirectory(s:clang_library_path)
   let g:clang_library_path = s:clang_library_path
 endif
 
+" Syntastic
+"  C++:
+let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
+

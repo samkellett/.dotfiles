@@ -22,3 +22,6 @@
 [submodule "modules/iTerm2-Color-Schemes"]
 	path = modules/iTerm2-Color-Schemes
 	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+[submodule "modules/syntastic"]
+	path = modules/syntastic
+	url = git@github.com:scrooloose/syntastic.git
