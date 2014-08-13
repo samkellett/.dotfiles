@@ -19,3 +19,6 @@
 [submodule "modules/vim-monokai"]
 	path = modules/vim-monokai
 	url = git@github.com:sickill/vim-monokai.git
+[submodule "modules/iTerm2-Color-Schemes"]
+	path = modules/iTerm2-Color-Schemes
+	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
