@@ -1,3 +1,6 @@
+" Use Vim settings not Vi (this must be first)
+set nocompatible
+
 " Pathogen
 execute pathogen#infect()
 
@@ -7,6 +10,20 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
+
+" Allow backspacing over everything
+set backspace=indent,eol,start
+
+" Auto and highlight searches
+set incsearch
+set hlsearch
+
+" Better tab completion (ala Bash)
+set wildmode=list:longest
+set wildmenu
+
+" Mouse Stuff
+set mouse=a
 
 " Autosave on focus lost
 au FocusLost * silent! wa
