@@ -13,3 +13,6 @@
 [submodule "modules/urxvt-solarized-xresources"]
 	path = modules/urxvt-solarized-xresources
 	url = https://github.com/samkellett/urxvt-solarized-xresources.git
+[submodule "modules/clang_complete"]
+	path = modules/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
