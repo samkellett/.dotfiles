@@ -25,3 +25,6 @@
 [submodule "modules/syntastic"]
 	path = modules/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "modules/a.vim"]
+	path = modules/a.vim
+	url = git@github.com:vim-scripts/a.vim.git
