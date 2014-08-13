@@ -28,3 +28,6 @@
 [submodule "modules/a.vim"]
 	path = modules/a.vim
 	url = git@github.com:vim-scripts/a.vim.git
+[submodule "modules/delimitMate"]
+	path = modules/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
