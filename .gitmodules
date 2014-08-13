@@ -16,3 +16,6 @@
 [submodule "modules/clang_complete"]
 	path = modules/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "modules/vim-monokai"]
+	path = modules/vim-monokai
+	url = git@github.com:sickill/vim-monokai.git

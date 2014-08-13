@@ -7,10 +7,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Solarized
+" Colour scheme
 syntax enable
-" set background=dark
-" colorscheme solarized
+colorscheme monokai
 
 " Disable arrow keys
 noremap  <Up>  <NOP>
