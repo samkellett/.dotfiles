@@ -1,17 +1,14 @@
 [user]
-  email = sam.kellett@justonedatabase.com
-  name = Sam Kellett
-
-[push]
-  default = simple
+	email = sam.kellett@justonedatabase.com
+	name = Sam Kellett
 
 [branch "master"]
-  rebase = true
+	rebase = true
 
 [branch]
-  autosetuprebase = always
+	autosetuprebase = always
 
 [filter "media"]
-  clean = git-media filter-clean
-  smudge = git-media filter-smudge
+	clean = git-media filter-clean
+	smudge = git-media filter-smudge
 

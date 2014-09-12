@@ -9,7 +9,7 @@ function lnk
   shift
 
   local confirm="y"
-  if [[ -L "$link" || -f "$link" ]] && [[ "$force" == "n" ]]; then
+  if [[ -L "$link" || -f "$link" || -h "$link" ]] && [[ "$force" == "n" ]]; then
     while :; do
       echo -n "$link already exists, overwrite [Y/n]? "
       read confirm
@@ -23,7 +23,7 @@ function lnk
   fi
 
   if [[ "$confirm" == "y" || "$force" == "y" ]]; then
-    rm -r "$link" 2> /dev/null
+    rm -rf "$link" 2> /dev/null
     ln -s "$target" "$link"
   fi
 }
@@ -39,3 +39,4 @@ lnk .ssh
 lnk .vim
 lnk .vimrc
 
+. ~/.bashrc
