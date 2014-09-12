@@ -5,7 +5,4 @@
 .ssh/*
 !.ssh/id_rsa.pub
 
-.xmonad/xmonad-x86_64-linux
-.xmonad/xmonad.errors
-.xmonad/xmonad.hi
-.xmonad/xmonad.o
+.vim/.netrwhist
