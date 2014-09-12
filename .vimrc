@@ -6,9 +6,8 @@ execute pathogen#infect()
 
 " Line numbers + tabs
 set number
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=4
+set shiftwidth=4
 set autoindent
 
 " Allow backspacing over everything
@@ -64,8 +63,6 @@ endif
 " Syntastic
 "  C++:
 let g:syntastic_cpp_checkers = ['gcc']
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 

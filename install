@@ -30,8 +30,12 @@ function lnk
 
 lnk .bash_profile
 lnk .bashrc
+lnk .bash_aliases
+
 lnk .gitconfig
+
 lnk .ssh
+
 lnk .vim
 lnk .vimrc
 
