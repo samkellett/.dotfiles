@@ -16,3 +16,6 @@
 [submodule "modules/delimitMate"]
 	path = modules/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
+[submodule "modules/vim-bclose"]
+	path = modules/vim-bclose
+	url = git@github.com:cespare/vim-bclose.git
