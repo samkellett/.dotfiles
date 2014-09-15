@@ -10,6 +10,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" Add visual column indicator
+set colorcolumn=100
+
 " Allow backspacing over everything
 set backspace=indent,eol,start
 
