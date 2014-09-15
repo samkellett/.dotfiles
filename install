@@ -31,8 +31,12 @@ function lnk
 lnk .bash_profile
 lnk .bashrc
 lnk .bash_aliases
+. ~/.bashrc
 
 lnk .gitconfig
+
+mkdir -p ~/.subversion
+lnk .subversion/config
 
 lnk .ssh
 if [[ -f ~/Dropbox/.ssh/id_rsa ]]; then
@@ -48,4 +52,3 @@ lnk .vimrc
 
 lnk .tmux.conf
 
-. ~/.bashrc
