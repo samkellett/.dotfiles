@@ -51,12 +51,6 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" ...and strip it on save
-function! TrimWhiteSpace()
-  %s/\s\+$//e
-endfunction
-autocmd BufWritePre * :call TrimWhiteSpace()
-
 " Syntastic
 "  C++:
 let g:syntastic_cpp_checkers = ['gcc']
