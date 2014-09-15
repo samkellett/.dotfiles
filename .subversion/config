@@ -146,3 +146,6 @@
 # *.jpg = svn:mime-type=image/jpeg
 # Makefile = svn:eol-style=native
 
+[helpers]
+diff-cmd = /home/sam/.dotfiles/svndiff.sh
+
