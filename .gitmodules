@@ -22,3 +22,6 @@
 [submodule "modules/svn-color"]
 	path = modules/svn-color
 	url = git@github.com:philchristensen/svn-color.git
+[submodule "modules/vim-syntax-extra"]
+	path = modules/vim-syntax-extra
+	url = git@github.com:justinmk/vim-syntax-extra.git
