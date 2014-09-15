@@ -19,3 +19,6 @@
 [submodule "modules/vim-bclose"]
 	path = modules/vim-bclose
 	url = git@github.com:cespare/vim-bclose.git
+[submodule "modules/svn-color"]
+	path = modules/svn-color
+	url = git@github.com:philchristensen/svn-color.git
