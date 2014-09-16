@@ -70,3 +70,10 @@ let g:syntastic_cpp_auto_refresh_includes = 1
 " swp directory
 set directory=$HOME/.vim/swp//
 
+" Ctrl+S to save, Ctrl+q to quit
+map <C-s> :w<cr>
+imap <C-s> <ESC>:w<cr>a
+
+map <C-q> :qa<cr>
+imap <C-q> <ESC>:qa<cr>
+

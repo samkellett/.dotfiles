@@ -83,3 +83,9 @@ fi
 
 export EDITOR=vim
 
+# Turn off XOFF and XON
+stty ixany
+stty ixoff -ixon
+stty stop undef
+stty start undef
+
