@@ -106,5 +106,7 @@ let g:ctrlp_custom_ignore = {
 \ }
 
 " Disable <i> for entering insert mode (it's too close to <u>!)
+noremap a <NOP>
 noremap i <NOP>
+noremap a i
 
