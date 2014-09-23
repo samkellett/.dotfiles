@@ -53,6 +53,19 @@ inoremap <C-l> <Right>
 " NERDTree
 map <silent> <C-n> :NERDTreeFocus<CR>
 
+let NERDTreeQuitOnOpen=1
+
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+	  if winnr("$") == 1
+	    q
+	  endif
+	endif
+  endif
+endfunction
+
 " Highlight excess whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
