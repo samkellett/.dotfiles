@@ -94,3 +94,14 @@ imap <C-s> <ESC>:w<cr>a
 map <C-q> :qa<cr>
 imap <C-q> <ESC>:qa<cr>
 
+" CtrlP settings
+let g:ctrl_map = '<c-p>'
+let g:ctrl_cmd = 'CtrlP'
+
+let g:ctrlp_working_path_mode = ''
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/]\.svn$',
+  \ 'file': '\v^[^\.]+(\.(o|lo)|)$'
+\ }
+
