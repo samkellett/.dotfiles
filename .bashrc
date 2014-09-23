@@ -89,3 +89,6 @@ stty ixoff -ixon
 stty stop undef
 stty start undef
 
+# Grep options to avoid .svn folders like the plague
+export GREP_OPTIONS='--exclude-dir=.svn'
+
