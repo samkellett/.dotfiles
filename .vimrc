@@ -34,6 +34,10 @@ au FocusLost * silent! wa
 syntax enable
 colorscheme monokai
 
+" Syntax File Associations
+au BufNewFile,BufRead *.dql set filetype=sql
+au BufNewFile,BufRead *.dql_inc set filetype=sql
+
 " Disable arrow keys
 noremap  <Up>  <NOP>
 noremap  <Down>  <NOP>
