@@ -92,3 +92,23 @@ stty start undef
 # Grep options to avoid .svn folders like the plague
 export GREP_OPTIONS='--exclude-dir=.svn'
 
+# Shortcut for running a unit test
+function unit
+{
+  pushd ~/JustOne/src/test
+  make "test${1}" && ./test${1}
+
+  echo -e "\nResult: $?"
+  popd
+}
+
+# Shortcut for integration test
+function integration
+{
+  pushd ~/JustOne/src/Integration
+  ./testIntegration "$@"
+
+  echo -e "\nResult: $?"
+  popd
+}
+
