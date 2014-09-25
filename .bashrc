@@ -90,13 +90,16 @@ stty stop undef
 stty start undef
 
 # Grep options to avoid .svn folders like the plague
-export GREP_OPTIONS='--exclude-dir=.svn'
+export GREP_OPTIONS='-I --exclude-dir=.svn --exclude-dir=.deps --exclude=tags'
 
 # Shortcut for running a unit test
 function unit
 {
+  local name="$1";
+  shift
+
   pushd ~/JustOne/src/test
-  make "test${1}" && ./test${1}
+  make "test${name}" && valgrind ./test${name} "$@"
 
   echo -e "\nResult: $?"
   popd

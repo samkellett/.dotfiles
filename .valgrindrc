@@ -1,0 +1,4 @@
+--memcheck:leak-check=full
+--show-reachable=yes
+--suppressions=/home/sam/JustOne/JustOne/suppressions.valgrind
+
