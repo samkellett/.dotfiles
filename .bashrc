@@ -95,14 +95,21 @@ export GREP_OPTIONS='-I --exclude-dir=.svn --exclude-dir=.deps --exclude=tags'
 # Shortcut for running a unit test
 function unit
 {
+  set -x
+  case "$1" in
+    "--no-valgrind") local valgrind="" && shift ;;
+	*) local valgrind="valgrind" ;;
+  esac
+
   local name="$1";
   shift
 
   pushd ~/JustOne/src/test
-  make "test${name}" && valgrind ./test${name} "$@"
+  make "test${name}" && $valgrind ./test${name} "$@"
 
   echo -e "\nResult: $?"
   popd
+  set +x
 }
 
 # Shortcut for integration test
