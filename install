@@ -33,6 +33,12 @@ lnk .bashrc
 lnk .bash_aliases
 . ~/.bashrc
 
+lnk .colorgccrc
+ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/g++
+ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/c++
+ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/gcc
+ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/cc
+
 lnk .gitconfig
 
 mkdir -p ~/.subversion

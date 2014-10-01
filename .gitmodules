@@ -31,3 +31,6 @@
 [submodule "modules/vim-surround"]
 	path = modules/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "modules/colorgcc"]
+	path = modules/colorgcc
+	url = git@github.com:colorgcc/colorgcc.git
