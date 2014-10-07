@@ -24,8 +24,12 @@ set hlsearch
 set wildmode=list:longest
 set wildmenu
 
+" Send more characters for redraws
+set ttyfast
+
 " Mouse Stuff
 set mouse=a
+set ttymouse=xterm2
 
 " Autosave on focus lost
 au FocusLost * silent! wa
