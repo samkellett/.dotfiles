@@ -34,3 +34,6 @@
 [submodule "modules/colorgcc"]
 	path = modules/colorgcc
 	url = git@github.com:colorgcc/colorgcc.git
+[submodule "modules/tagbar"]
+	path = modules/tagbar
+	url = git://github.com/majutsushi/tagbar

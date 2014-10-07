@@ -114,3 +114,7 @@ noremap a <NOP>
 noremap i <NOP>
 noremap a i
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
+
