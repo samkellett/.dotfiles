@@ -14,3 +14,9 @@
 
 [color]
 	ui = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
