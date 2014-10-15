@@ -37,3 +37,6 @@
 [submodule "modules/tagbar"]
 	path = modules/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "modules/codeschool-vim-theme"]
+	path = modules/codeschool-vim-theme
+	url = git@github.com:29decibel/codeschool-vim-theme.git

@@ -36,7 +36,7 @@ au FocusLost * silent! wa
 
 " Colour scheme
 syntax enable
-colorscheme monokai
+colorscheme codeschool
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql
