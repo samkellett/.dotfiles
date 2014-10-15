@@ -116,7 +116,7 @@ function integration
   case "$1" in
     "--no-make") shift ;;
 	*) pushd ~/JustOne/src
-       make
+       make || return $?
        popd ;;
   esac
 
