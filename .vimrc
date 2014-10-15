@@ -110,10 +110,10 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v^[^\.]+(\.(o|lo)|)$'
 \ }
 
-" Disable <i> for entering insert mode (it's too close to <u>!)
-noremap a <NOP>
-noremap i <NOP>
-noremap a i
+" " Disable <i> for entering insert mode (it's too close to <u>!)
+" noremap a <NOP>
+" noremap i <NOP>
+" noremap a i
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
