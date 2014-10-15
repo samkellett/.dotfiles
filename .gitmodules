@@ -40,3 +40,9 @@
 [submodule "modules/codeschool-vim-theme"]
 	path = modules/codeschool-vim-theme
 	url = git@github.com:29decibel/codeschool-vim-theme.git
+[submodule "modules/STL-Syntax"]
+	path = modules/STL-Syntax
+	url = git@github.com:Mizuchi/STL-Syntax.git
+[submodule "modules/vim-colors-solarized"]
+	path = modules/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
