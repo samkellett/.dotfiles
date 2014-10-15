@@ -35,8 +35,11 @@ set ttymouse=xterm2
 au FocusLost * silent! wa
 
 " Colour scheme
+let g:solarized_termcolors=256
+
 syntax enable
-colorscheme codeschool
+set background=light
+colorscheme solarized
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql

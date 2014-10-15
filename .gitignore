@@ -1,6 +1,7 @@
 # .gitignore for .dotfiles
 
 *.swp
+*.swo
 
 .ssh/*
 !.ssh/id_rsa.pub
