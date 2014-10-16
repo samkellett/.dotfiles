@@ -49,3 +49,6 @@
 [submodule "modules/tmux-colors-solarized"]
 	path = modules/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
+[submodule "modules/vim-airline"]
+	path = modules/vim-airline
+	url = git@github.com:bling/vim-airline.git
