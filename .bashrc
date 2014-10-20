@@ -104,7 +104,7 @@ function unit
   shift
 
   pushd ~/JustOne/src/test
-  make "test${name}" && $valgrind ./test${name} "$@"
+  make "test${name}" && $valgrind ./test${name} --gtest_color=yes "$@"
 
   echo -e "\nResult: $?"
   popd
