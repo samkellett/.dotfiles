@@ -35,11 +35,9 @@ set ttymouse=xterm2
 au FocusLost * silent! wa
 
 " Colour scheme
-let g:solarized_termcolors=256
-
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme jellybeans
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql
