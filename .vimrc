@@ -35,8 +35,8 @@ set ttymouse=xterm2
 au FocusLost * silent! wa
 
 " Colour scheme
+set t_Co=256
 syntax enable
-set background=dark
 colorscheme jellybeans
 
 " Syntax File Associations
