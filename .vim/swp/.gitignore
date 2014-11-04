@@ -1,2 +1,4 @@
-# Empty file to preverse folder structure in git
+# Ignore temporary files
+*.swp
+*.swo
 
