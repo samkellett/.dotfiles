@@ -63,7 +63,7 @@ inoremap <C-l> <Right>
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 let NERDTreeQuitOnOpen=1
-let NERDTreeIgnore = ['\.o$']
+let NERDTreeIgnore = ['\.o$', '\.lo$']
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 function! s:CloseIfOnlyNerdTreeLeft()
