@@ -123,3 +123,7 @@ noremap <C-u> u
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
+" Persistant undo history
+set undofile
+set undodir=$HOME/.vim/undo//
+
