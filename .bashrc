@@ -83,6 +83,8 @@ fi
 
 export EDITOR=vim
 
+export PATH=$HOME/bin:$PATH
+
 # Turn off XOFF and XON
 stty ixany
 stty ixoff -ixon
