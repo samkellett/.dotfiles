@@ -112,8 +112,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v^[^\.]+(\.(o|lo)|)$'
 \ }
 
-" Disable a (removing bad habits)
-noremap a <NOP>
+" Better find
+nnoremap n nzz
 
 " Make u Ctrl+u (too many accidental hits...)
 noremap u <NOP>
