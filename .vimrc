@@ -127,3 +127,8 @@ let g:tagbar_autoclose = 1
 set undofile
 set undodir=$HOME/.vim/undo//
 
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_preview_bottom = 1
+let g:gundo_close_on_revert = 1
+

@@ -55,3 +55,6 @@
 [submodule "modules/vim-colorschemes"]
 	path = modules/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "modules/Gundo"]
+	path = modules/Gundo
+	url = https://github.com/vim-scripts/Gundo.git
