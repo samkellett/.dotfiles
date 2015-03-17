@@ -39,6 +39,8 @@ ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/c++
 ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/gcc
 ln -sf ~/.dotfiles/modules/colorgcc/colorgcc.pl /usr/local/bin/cc
 
+lnk .gdbinit
+
 lnk .gitconfig
 
 mkdir -p ~/.subversion
