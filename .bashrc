@@ -85,6 +85,8 @@ export EDITOR=vim
 
 export PATH=$HOME/bin:$PATH
 
+export MAKEFLAGS="$MAKEFLAGS -s"
+
 # Turn off XOFF and XON
 stty ixany
 stty ixoff -ixon
