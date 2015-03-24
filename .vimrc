@@ -109,7 +109,7 @@ let g:ctrlp_working_path_mode = ''
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/]\.svn$',
-  \ 'file': '\v^[^\.]+(\.(o|lo)|)$'
+  \ 'file': '\v^[^\.]+(\.(o|lo|tmp)|)$'
 \ }
 
 " Better find
