@@ -1,4 +1,5 @@
 # .gitignore for .dotfiles
+.DS_Store
 
 .ssh/*
 !.ssh/id_rsa.pub
