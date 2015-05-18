@@ -6,9 +6,10 @@ execute pathogen#infect()
 
 " Line numbers + tabs
 set number
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
+set expandtab
 
 " Add visual column indicator
 set colorcolumn=100
@@ -108,7 +109,7 @@ let g:ctrl_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = ''
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/]\.svn$',
+  \ 'dir': '\v[\/]\.svn|build|ext$',
   \ 'file': '\v^[^\.]+(\.(o|lo|tmp)|)$'
 \ }
 
