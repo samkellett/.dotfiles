@@ -37,7 +37,7 @@ au FocusLost * silent! wa
 " Colour scheme
 set t_Co=256
 syntax enable
-colorscheme jellybeans
+colorscheme argonaut
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql

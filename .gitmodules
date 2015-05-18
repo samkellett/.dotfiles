@@ -58,3 +58,6 @@
 [submodule "modules/Gundo"]
 	path = modules/Gundo
 	url = https://github.com/vim-scripts/Gundo.git
+[submodule "modules/argonaut.vum"]
+	path = modules/argonaut.vum
+	url = https://github.com/effkay/argonaut.vim.git
