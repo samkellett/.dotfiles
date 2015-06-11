@@ -114,6 +114,23 @@ function unit
   popd
 }
 
+function u2
+{
+  case "$1" in
+    "--no-valgrind") local valgrind="" && shift ;;
+	*) local valgrind="valgrind" ;;
+  esac
+
+  local name="$1";
+  shift
+
+  pushd ~/JustOne/src
+  make "test/test${name}" && $valgrind ./test/test${name} --gtest_color=yes "$@"
+
+  echo -e "\nResult: $?"
+  popd
+}
+
 # Shortcut for integration test
 function integration
 {
