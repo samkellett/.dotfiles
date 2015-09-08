@@ -58,3 +58,6 @@
 [submodule "modules/Gundo"]
 	path = modules/Gundo
 	url = https://github.com/vim-scripts/Gundo.git
+[submodule "modules/seti.vim"]
+	path = modules/seti.vim
+	url = https://github.com/trusktr/seti.vim

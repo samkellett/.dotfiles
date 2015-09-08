@@ -38,11 +38,13 @@ au FocusLost * silent! wa
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme seti
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql
+au BufNewFile,BufRead *.pgdql set filetype=sql
 au BufNewFile,BufRead *.dql_inc set filetype=sql
+au BufNewFile,BufRead *.pgdql_inc set filetype=sql
 
 " Disable arrow keys
 noremap  <Up>  <NOP>
@@ -132,4 +134,7 @@ set undodir=$HOME/.vim/undo//
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_preview_bottom = 1
 let g:gundo_close_on_revert = 1
+
+" Curly braces not an error
+let c_no_curly_error = 1
 
