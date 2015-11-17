@@ -38,7 +38,7 @@ au FocusLost * silent! wa
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme seti
+colorscheme solarized
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql

@@ -1,3 +1,5 @@
+export HOME=/home/local/sam
+
 # .bashrc
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc

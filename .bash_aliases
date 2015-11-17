@@ -6,3 +6,4 @@ alias sauce='source ~/.bashrc'
 
 # Coloured svn output
 alias svnc='~/.dotfiles/modules/svn-color/svn-color.py'
+

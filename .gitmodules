@@ -61,3 +61,10 @@
 [submodule "modules/seti.vim"]
 	path = modules/seti.vim
 	url = https://github.com/trusktr/seti.vim
+[submodule "modules/argonaut.vum"]
+	path = modules/argonaut.vum
+	url = https://github.com/effkay/argonaut.vim.git
+[submodule "modules/dircolors-solarized"]
+	path = modules/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized
+
