@@ -40,6 +40,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+let g:solarized_diffmode="high"
+
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql
 au BufNewFile,BufRead *.pgdql set filetype=sql
@@ -112,7 +114,7 @@ let g:ctrlp_working_path_mode = ''
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/]\.svn$',
-  \ 'file': '\v^[^\.]+(\.(o|lo|tmp|log)|)$'
+  \ 'file': '\v^[^\.]+(\.(o|lo|tmp|log|trs)|)$'
 \ }
 
 " Better find
@@ -137,4 +139,7 @@ let g:gundo_close_on_revert = 1
 
 " Curly braces not an error
 let c_no_curly_error = 1
+
+" vim-airline
+let g:airline_powerline_fonts = 1
 

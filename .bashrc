@@ -83,7 +83,7 @@ fi
 
 export EDITOR=vim
 
-export PATH=/home/sam:$HOME/bin:$PATH
+export PATH=/home/sam/bin:$HOME/bin:$PATH
 
 export MAKEFLAGS="$MAKEFLAGS -s"
 
