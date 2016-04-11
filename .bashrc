@@ -114,21 +114,29 @@ function unit
   popd
 }
 
-function u2
+function unit
 {
   case "$1" in
     "--no-valgrind") local valgrind="" && shift ;;
 	*) local valgrind="valgrind" ;;
   esac
 
-  local name="$1";
-  shift
+  local dir="$1"; shift
+  local name="$1"; shift
 
   pushd ~/JustOne/src
-  make "test/test${name}" && $valgrind ./test/test${name} --gtest_color=yes "$@"
+  make "${dir}/test/test${name}" && $valgrind ./${dir}/test/test${name} --gtest_color=yes "$@" 2>&1
 
   echo -e "\nResult: $?"
   popd
+}
+
+function u2
+{
+  case "$1" in
+    "--no-valgrind") shift; unit --no-valgrind . "$@" ;;
+	*) unit . "$@" ;;
+  esac
 }
 
 # Shortcut for integration test
