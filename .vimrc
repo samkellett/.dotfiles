@@ -10,6 +10,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" Soft tabs for python
+autocmd Filetype python setlocal expandtab
+
 " Add visual column indicator
 set colorcolumn=100
 
@@ -47,6 +50,9 @@ au BufNewFile,BufRead *.dql set filetype=sql
 au BufNewFile,BufRead *.pgdql set filetype=sql
 au BufNewFile,BufRead *.dql_inc set filetype=sql
 au BufNewFile,BufRead *.pgdql_inc set filetype=sql
+
+au BufNewFile,BufRead *.ypp set filetype=yacc
+au BufNewFile,BufRead *.lpp set filetype=lex
 
 " Disable arrow keys
 noremap  <Up>  <NOP>
