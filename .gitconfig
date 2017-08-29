@@ -8,17 +8,17 @@
 [branch]
 	autosetuprebase = always
 
-[filter "media"]
-	clean = git-media filter-clean
-	smudge = git-media filter-smudge
-
 [color]
 	ui = true
+
 [diff]
 	tool = vimdiff
+
 [difftool]
 	prompt = false
+
 [alias]
 	d = difftool
+
 [push]
 	default = simple

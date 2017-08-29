@@ -38,7 +38,8 @@ au FocusLost * silent! wa
 " Colour scheme
 set t_Co=256
 syntax enable
-colorscheme argonaut
+set background=dark
+colorscheme solarized
 
 " Syntax File Associations
 au BufNewFile,BufRead *.dql set filetype=sql
@@ -95,13 +96,6 @@ let g:syntastic_cpp_auto_refresh_includes = 1
 " swp directory
 set directory=$HOME/.vim/swp//
 
-" Ctrl+S to save, Ctrl+q to quit
-map <C-s> :w<cr>
-imap <C-s> <ESC>:w<cr>a
-
-map <C-q> :qa<cr>
-imap <C-q> <ESC>:qa<cr>
-
 " CtrlP settings
 let g:ctrl_map = '<c-p>'
 let g:ctrl_cmd = 'CtrlP'
@@ -119,10 +113,6 @@ nnoremap n nzz
 " Make u Ctrl+u (too many accidental hits...)
 noremap u <NOP>
 noremap <C-u> u
-
-" Tagbar
-nmap <F8> :TagbarToggle<CR>
-let g:tagbar_autoclose = 1
 
 " Persistant undo history
 set undofile
