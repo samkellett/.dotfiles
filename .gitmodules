@@ -40,3 +40,9 @@
 [submodule "modules/argonaut.vum"]
 	path = modules/argonaut.vum
 	url = https://github.com/effkay/argonaut.vim.git
+[submodule "modules/llvm.vim"]
+	path = modules/llvm.vim
+	url = https://github.com/Superbil/llvm.vim.git
+[submodule "modules/YouCompleteMe"]
+	path = modules/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

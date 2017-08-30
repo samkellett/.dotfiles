@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Add .local to the PATH for locally installed programs.
+export PATH=$HOME/.local/bin:$PATH

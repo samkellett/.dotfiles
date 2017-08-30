@@ -123,3 +123,12 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_preview_bottom = 1
 let g:gundo_close_on_revert = 1
 
+" llvm.vim
+augroup filetype
+  au! BufRead,BufNewFile *.ll set filetype=llvm
+augroup END
+
+augroup filetype
+  au! BufRead,BufNewFile *.td set filetype=tablegen
+augroup END
+
