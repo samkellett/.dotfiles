@@ -12,7 +12,7 @@ set autoindent
 set expandtab
 
 " Add visual column indicator
-set colorcolumn=100
+set colorcolumn=80
 
 " Allow backspacing over everything
 set backspace=indent,eol,start
@@ -77,21 +77,6 @@ function! s:CloseIfOnlyNerdTreeLeft()
 	endif
   endif
 endfunction
-
-" Highlight excess whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-" Syntastic
-"  C++:
-let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++0x'
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_auto_refresh_includes = 1
 
 " swp directory
 set directory=$HOME/.vim/swp//

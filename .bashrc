@@ -116,5 +116,29 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Add .local to the PATH for locally installed programs.
+# Add .local to the PATH and LD_LIBRARY_PATH for locally installed programs.
 export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
+
+# ccache stuff.
+ccache --max-size=50G
+
+export PATH=/usr/lib/ccache:$PATH
+export CCACHE_PREFIX=icecc
+
+export MAKEFLAGS=-j120
+
+# ctest stuff.
+export CTEST_PARALLEL_LEVEL=`nproc`
+export CTEST_OUTPUT_ON_FAILURE=1
+
+# Local perl modules.
+eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+export MANPATH=$HOME/perl5/man:$MANPATH
+
+# csmith and creduce.
+export CSMITH_HOME=$HOME/.local/src/csmith
+export PATH=$HOME/.local/src/creduce/creduce:$PATH
+
+# pkg-config
+export PKG_CONFIG_PATH=$HOME/.local/lib/pkgconfig/:$PKG_CONFIG_PATH
